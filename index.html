@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/itc-slider.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <script src="/js/itc-slider.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    <script src="/js/map.js" defer></script>
+    <title>GarantPay</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="container">
+                    <div class="header__menu">
+                        <img src="/img/svg/logo.svg" alt="logo" class="header_logo">
+                             <nav>
+                                <ul class="header__nav">
+                                        <li><a href="" class="header__menu__link">Преимущества</a></li>
+                                        <li><a href="" class="header__menu__link">Схема работы</a></li>
+                                        <li><a href="" class="header__menu__link">Гарантии</a></li>
+                                        <li><a href="" class="header__menu__link">Калькулятор</a></li>
+                                        <li><a href="" class="header__menu__link">Контакты</a></li>
+                                 </ul>
+                                 <div class="hamburger-menu">
+                                    <input id="menu__toggle" type="checkbox" />
+                                    <label class="menu__btn" for="menu__toggle">
+                                      <span></span>
+                                    </label>
+                                    <ul class="menu__box">
+                                        <li><a class="menu__item" href="#">Преимущества</a></li>
+                                        <li><a class="menu__item" href="#">Схема работы</a></li>
+                                        <li><a class="menu__item" href="#">Гарантии</a></li>
+                                        <li><a class="menu__item" href="#">Калькулятор</a></li>
+                                        <li><a class="menu__item" href="#">Контакты</a></li>
+                                      </ul>
+                                    </div>
+                             </nav>  
+                             
+                    </div>
+            </div>
+            <div class="header_mob">
+                <h1 class="slider__item_h1">Безопасные сделки дешевле, чем на фриланс биржах</h1>
+                                <p class="slider__item_p">Платите 4% от суммы безопасной сделки, юридическая помощь в любое время.</p>
+                                <a href="" class="slider__item__btn">Создать сделку</a>
+                                <div class="slider__item__windows">
+                                    <img class="slider__item__windows_img" src="/img/windowsimg.png" alt="windowsimg">
+                                    <div class="slider__item__windows_cfg">
+                                        <h2 class="windows__h2">Будьте защищены</h2>
+                                        <p class="windows__p">Делите сделку на этапы, и получите деньги даже когда проект заморожен.</p>
+                                    </div>
+                                </div>
+                                
+            </div>
+            <div class="slider" data-slider="itc-slider">
+                <div class="slider__wrapper">
+                    <div class="slider__items">
+                        <div class="slider__item">
+                            <div class="container">
+                                <h1 class="slider__item_h1">Безопасные сделки дешевле, чем на фриланс биржах</h1>
+                                <p class="slider__item_p">Платите 4% от суммы безопасной сделки, юридическая помощь в любое время.</p>
+                                <a href="" class="slider__item__btn">Создать сделку</a>
+                                <div class="slider__item__windows">
+                                    <img src="/img/windowsimg.png" alt="windowsimg">
+                                    <div class="slider__item__windows_cfg">
+                                        <h2 class="windows__h2">Будьте защищены</h2>
+                                        <p class="windows__p">Делите сделку на этапы, и получите деньги даже когда проект заморожен.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- Контент 1 слайда -->
+                        </div>
+                        <div class="slider__item">
+                            <div class="container">
+                                <h1 class="slider__item_h1">Безопасные сделки дешевле, чем на фриланс биржах</h1>
+                                <p class="slider__item_p">Платите 4% от суммы безопасной сделки, юридическая помощь в любое время.</p>
+                                <a href="" class="slider__item__btn">Создать сделку</a>
+                                <div class="slider__item__windows">
+                                    <img src="/img/windowsimg.png" alt="windowsimg">
+                                    <div class="slider__item__windows_cfg">
+                                        <h2 class="windows__h2">Будьте защищены</h2>
+                                        <p class="windows__p">Делите сделку на этапы, и получите деньги даже когда проект заморожен.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- Контент 2 слайда -->
+                        </div>
+                        
+                </div>
+                <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                <div class="slider__control" data-slide="prev"></div>
+                <div class="slider__control" data-slide="next"></div>
+                <ol class="slider__indicators">
+                    <li data-slide-to="0"></li>
+                    <li data-slide-to="1"></li>
+                  </ol>
+            </div>
+        </div>    
+    </header>
+    <main class="main">
+        <div class="advantages">
+            <div class="container">
+                <div class="advantages__info element-animation">
+                    <h2 class="advantages__h2">Преимущества</h2>
+                    <strong class="advantages__st">Вы фрилансер?</strong>
+                        <div class="advantages_text">
+                            <p class="advantages__p">На фриланс-биржах комиссия 
+                                за безопасную сделку доходит до 20%,
+                                а работать без нее - опасно. Заказчик
+                                может не оплатить вашу работу.<br>
+                            </p>
+                            <p class="advantages__p">С нашей безопасной сделкой вы 
+                                можете заработать больше, получить юридическую поддержку и обезопасить 
+                                себя от мошенников.
+                            </p>
+                        </div>
+                        <a href="" class="advantages_btn">Узнать больше</a>
+                    <div class="advantages__pr">
+                        <ul class="advantages__list">
+                            <li class="advantages__item">
+                                <img src="/img/svg/1.svg" alt="" class="advantages__item__img">
+                                <div class="advantages__item__text">
+                                <h3 class="advantages__item__text_h3">Маленькая комиссия</h3>
+                                <p class="advantages__item__text_p">Всего 4% от суммы заказа</p>
+                                </div>
+                            </li>
+                            <li class="advantages__item">
+                                <img src="/img/svg/2.svg" alt="" class="advantages__item__img">
+                                <div class="advantages__item__text">
+                                <h3 class="advantages__item__text_h3">Юридическая помощь</h3>
+                                <p class="advantages__item__text_p">Помощь на всех этапах</p>
+                                </div>
+                            </li>
+                            <li class="advantages__item">
+                                <img src="/img/svg/3.svg" alt="" class="advantages__item__img">
+                                <div class="advantages__item__text" >
+                                <h3 class="advantages__item__text_h3">Любая сумма сделки</h3>
+                                <p class="advantages__item__text_p">Неограниченная сумма</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>    
+                </div>
+            </div>
+        </div>
+
+        <div class="sheme element-animation">
+            <div class="container">
+                <h2 class="sheme__h2">
+                    Схема работы
+                </h2>
+                <ul class="sheme__list">
+                    <li class="sheme__item1">
+                        <div class="sheme__info">
+                            <h2 class="sheme__info__h2">
+                                Заполняете форму
+                            </h2>
+                            <p class="sheme__info__p">
+                                Заполняете форму, 
+                                вводите почту, имя,
+                                телефон, подтверждаете
+                                почту и номер БИК.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="sheme__item2">
+                        <div class="sheme__info2">
+                            <h2 class="sheme__info2__h2">
+                                Согласуете сделку
+                            </h2>
+                            <p class="sheme__info2__p">
+                                Согласуете условия
+                                сделки с заказчиком,
+                                ждете его подтверждения.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="sheme__item3">
+                        <div class="sheme__info3">
+                            <h2 class="sheme__info3__h2">
+                                Заполняете форму
+                            </h2>
+                            <p class="sheme__info3__p">
+                                Заполняете форму, 
+                                вводите почту, имя,
+                                телефон, подтверждаете
+                                почту и номер БИК.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="sheme__list2">
+                    <li class="sheme__item4">
+                        <div class="sheme__info4">
+                            <h2 class="sheme__info4__h2">
+                                Заполняете форму
+                            </h2>
+                            <p class="sheme__info4__p">
+                                Заполняете форму, 
+                                вводите почту, имя,
+                                телефон, подтверждаете
+                                почту и номер БИК.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="sheme__item5">
+                        <div class="sheme__info5">
+                            <h2 class="sheme__info5__h2">
+                                Согласуете сделку
+                            </h2>
+                            <p class="sheme__info5__p">
+                                Согласуете условия
+                                сделки с заказчиком,
+                                ждете его подтверждения.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="sheme__item6">
+                        <div class="sheme__info6">
+                            <h2 class="sheme__info6__h2">
+                                Заполняете форму
+                            </h2>
+                            <p class="sheme__info6__p">
+                                Заполняете форму, 
+                                вводите почту, имя,
+                                телефон, подтверждаете
+                                почту и номер БИК.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="garant element-animation">
+            <div class="container">
+                <div class="garant__container">
+                    <h2 class="garant__h2">Гарантии</h2>
+                    <div class="garant__info">
+                        <h2 class="garant__info__h2">Гарантии</h2>
+                        <p class="garant__info__p">ООО "Гарант Пэй" отвечает перед сторонами сделки своим значимым уставным капиталом. Обратите внимание, что платежи проводятся через эквайринг на специальный расчетный счет в Банке "Санкт-Петербург", при этом не используются переводы по карте между физическими лицами, это позволяет избежать мошеннических действий.</p>
+                        <a href="" class="garant__info__bnt">Читать дальше</a>
+                    </div>    
+                </div>        
+            </div>
+        </div>
+        <div class="sale element-animation">
+            <div class="container">
+                <div class="sale__container">
+                    <div class="sale_info">
+                        <h2 class="sale__info__h2">
+                            Сравните выгоду
+                        </h2>
+                        <p class="sale__info__p">Вы можете вычислить сумму с комиссией на калькуляторе.</p>
+                        <h4 class="sale__info__h4">Сумма сделки:</h4>
+                        <img src="/img/saleimg.png" alt="" class="sale__info__img">
+                        <h4 class="sale__info__h42">Оплата с комиссией (4%):</h4>
+                        <img src="/img/saleimg2.png" alt="" class="sale__info__img2">
+                        <p class="sale__info__p">Комиссию может оплатить 
+                            любая сторона сделки
+                            или оплатить пополам.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contacts element-animation">
+            <div class="container">
+                <div class="contacts__container">
+                    <div class="contacts__info">
+                        <div class="contacts__tel">
+                            <h2 class="contacts__info__h2">Контакты</h2>
+                            <ul class="contacts__list">
+                                <li class="contacts__item">
+                                    <img src="/img/svg/tel.svg" alt="">
+                                    <a href="tel:+78005057535" class="contacts__item__tel">+7 (800) 505 75 35</a>
+                                </li>
+                                <li class="contacts__item">
+                                    <img src="/img/svg/tel.svg" alt="">
+                                    <a href="tel:74951189065" class="contacts__item__tel">+7 (495) 118 90 65</a>
+                                </li>
+                                <li class="contacts__item">
+                                    <img src="/img/svg/mail.svg" alt="">
+                                    <a href="mailo:sale@guarantpay.com" class="contacts__item__tel">sale@guarantpay.com</a>
+                                </li>
+                            </ul>
+                         </div>
+                         <div class="contacts__soc">
+                            <h2 class="contacts__info__soc">Соц. сети:</h2>
+                            <div class="contacts__info__soc__list">
+                                <a href="" class="contacts__info__soc__item"><img src="/img/svg/fcb.svg" alt=""></a>
+                                <a href="" class="contacts__info__soc__item1"><img src="/img/svg/you.svg" alt=""></a>
+                                <a href="" class="contacts__info__soc__item2"><img src="/img/svg/inst.svg" alt=""></a>
+                                <a href="" class="contacts__info__soc__item2"><img src="/img/svg/vk.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2385.796644049403!2d34.31480691600859!3d53.275263187733984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412d596dce4aee57%3A0x3738c8f82026d625!2z0JDQrdCg0J4g0J_QkNCg0Jo!5e0!3m2!1sru!2sru!4v1663661802119!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <iframe class="map1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2385.796644049403!2d34.31480691600859!3d53.275263187733984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x412d596dce4aee57%3A0x3738c8f82026d625!2z0JDQrdCg0J4g0J_QkNCg0Jo!5e0!3m2!1sru!2sru!4v1663661802119!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+                </div>
+            </div>
+        <div class="quest element-animation">
+            <div class="container">
+                <div class="questcontainer">
+                    <div class="quest__info">
+                        <h2 class="quest__info__h2">Остались вопросы?</h2>
+                        <p class="quest__info__p">
+                            Заполните форму, и наши менеджеры
+                            свяжутся с вами в течение 15 минут.
+                        </p>
+                        <div class="quest__info__list">
+                            <form>
+                                <div class="form-left-decoration"></div>
+                                <div class="form-right-decoration"></div>
+                                <div class="circle"></div>
+                                <div class="form-inner">
+                                <input type="text" placeholder="Имя">
+                                <input type="email" placeholder="Телефон">
+                                <input type="email" placeholder="Email">
+                                <input type="submit" value="Позвоните мне">
+                                </div>
+                                </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main> 
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="footer__menu">
+                    <img src="/img/svg/footerlogi.svg" alt="logo" class="footer_logo">
+                         <nav>
+                            <ul class="footer__nav">
+                                <li><a href="" class="footer__menu__link">Преимущества</a></li>
+                                <li><a href="" class="footer__menu__link">Схема работы</a></li>
+                                <li><a href="" class="footer__menu__link">Гарантии</a></li>
+                                <li><a href="" class="footer__menu__link">Калькулятор</a></li>
+                                <li><a href="" class="footer__menu__link">Контакты</a></li>
+                             </ul>
+                         </nav>  
+                </div>
+                <div class="footer__info">
+                    
+                    <ul class="footer__info1">
+                        <li><h2 class="footer__info1__h2">Соц. сети</h2></li>
+                        <li class="footer__info1__list">
+                            <img src="/img/svg/footerinst.svg" alt="">
+                            <p>Instagram</p>
+                        </li>
+                        <li class="footer__info1__list">
+                            <img src="/img/svg/footerfac.svg" alt="" >
+                            <p>Facebook</p>
+                        </li>
+                        <li class="footer__info1__list">
+                            <img src="/img/svg/footeryou.svg" alt="">
+                            <p class="pfig">YouTube</p>
+                        </li>
+                        <li class="footer__info1__list">
+                            <img src="/img/svg/footervk.svg" alt="" class="fimg">
+                            <p>ВКонтакте</p>
+                        </li>
+                        
+                    </ul>
+                    <ul class="footer__info2">
+                        <li><h2 class="footer__info1__h2">Правила</h2>
+                            <p class="footer__info2__p">Договор присоединения</p>
+                            <p class="footer__info2__p">Политика конфиденциальности</p>
+                            <p class="footer__info2__p">Регламент пользования</p>
+                            <p class="footer__info2__p">Регламент «Разрешение спора»</p>
+                        </li>
+                        
+                    </ul>
+                    <ul class="footer__info3">
+                        <li><h2 class="footer__info1__h2">Контакты</h2>
+                            <div class="footer__info3__link">
+                                <a href="tel:+78005057535" class="footer__info3__link__item">+7 (800) 505 75 35</a>
+                                <br>
+                                <a href="tel:+74951189065" class="footer__info3__link__item">+7 (495) 118 90 65</a>
+                                <br>
+                                <a href="mailo:sale@guarantpay.com" class="footer__info3__link__item">sale@guarantpay.com</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="footer__info4">
+                        <li><h2 class="footer__info1__h2">Платежные системы</h2>
+                            <img src="/img/svg/master.svg" alt="" class="footer__info4__img">
+                            <img src="/img/svg/visa.svg" alt="" class="footer__info4__img">
+                            <img src="/img/svg/mir.svg" alt="" class="footer__info4__img">
+                        </li>
+                    </ul>
+                </div> 
+                <p class="footer__info__pd">ООО "Гарант Пэй", ОГРН 1177847065098, ИНН 7813271867, КПП 780701001
+                    198205, г. Санкт-Петербург, ул. Рабочая (Старо-Паново Тер.), д. 7 литера а, часть помещ. 59-3</p>
+                    <div class="footer__mob">
+                        <ul class="footer__info4m">
+                            <li>
+                                <h2 class="footer__info4__h2m">Платежные системы</h2>
+                                <div class="footer__mob1">
+                                    <img src="/img/svg/master.svg" alt="">
+                                    <img src="/img/svg/visa.svg" alt="" class="footer__mob1__imgm1">
+                                    <img src="/img/svg/mir.svg" alt="" class="footer__mob1__imgm1">
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="footer__info__pm">ООО "Гарант Пэй", ОГРН 1177847065098, ИНН 7813271867, КПП 780701001
+                            198205, г. Санкт-Петербург, ул. Рабочая (Старо-Паново Тер.), д. 7 литера а, часть помещ. 59-3</p>
+        
+                    </div> 
+            </div>
+        </div>
+            </div>
+        </div>
+    </footer>   
+</body>
+</html>
