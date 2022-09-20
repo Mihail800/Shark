@@ -92,7 +92,6 @@
 }
 .header__menu__link:hover{
     color: #1863A4;
-    text-decoration: underline;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 600;
