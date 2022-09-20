@@ -1,0 +1,237 @@
+/*!
+* ItcSlider
+*   site: https://itchief.ru/javascript/slider
+*   github: https://github.com/itchief/ui-components
+*
+* Copyright 2018-2022 Alexander Maltsev
+* Licensed under MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
+*/
+
+.slider {
+  position: relative;
+}
+
+.slider__container {
+  overflow: hidden;
+}
+.slider__items {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+.slider__item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  user-select: none;
+  will-change: transform;
+}
+.slider__item:nth-child(1) {
+  background-image: url(/img/back1.png);
+  height: 856px;
+}
+
+.slider__item:nth-child(2) {
+  background-image: url(/img/back1.png);
+  height: 856px;
+}
+.slider_disable-transition {
+  transition: none;
+}
+
+/* кнопки влево и вправо */
+
+.slider__control {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 50px;
+  text-align: center;
+}
+
+.slider__control_hide {
+  display: none;
+}
+
+.slider__control[data-slide="prev"] {
+  left: 38px;
+}
+
+.slider__control[data-slide="next"] {
+  right: 38px;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+  text-decoration: none;
+}
+
+.slider__control::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: 100% 100%;
+}
+
+.slider__control[data-slide="prev"]::before {
+  background-image: url("/img/svg/back.svg");
+}
+
+.slider__control[data-slide="next"]::before {
+  background-image: url("/img/svg/next.svg");
+}
+
+/* индикаторы */
+
+.slider__indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  margin: 0 15%;
+  padding-left: 0;
+  list-style: none;
+}
+
+.slider__indicators li {
+  flex: 0 1 auto;
+  box-sizing: content-box;
+  width: 30px;
+  height: 5px;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  background-color: rgb(255 255 255 / 50%);
+  background-clip: padding-box;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  cursor: pointer;
+}
+
+.slider__indicators li.active {
+  background-color: rgb(255 255 255 / 90%);
+}
+.slider__item_h1{
+  font-family: 'Montserrat';
+  width: 375px;
+  height: 68px;
+  font-size: 26px;
+  color: #2F5C83;
+  padding-top: 239px;
+  padding-bottom: 24px;
+}
+.slider__item_p{
+  width: 354px;
+  height: 52px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 142.19%;
+  color: #6485A2;
+  padding-top: 24px;
+  padding-bottom: 34px;
+}
+.slider__item__btn{
+  background: #1863A4;
+  border-radius: 28px;
+  text-decoration: none;
+  padding: 15px 36px;
+  color: #FFFFFF;
+  font-family: 'Montserrat';
+}
+.slider__item__windows{
+  width: 516px;
+  height: 150px;
+  background: rgba(227, 231, 245, 0.78);
+  box-shadow: 0px 0px 9px rgba(35, 31, 49, 0.06);
+  backdrop-filter: blur(7px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 6px;
+  display: flex;
+  margin-top: 120px;
+  margin-left: 844px;
+}
+@media (min-width: 1181px) {
+  .header_mob{
+    display: none;
+  }
+}
+@media (max-width: 1180px) {
+  .slider__item__windows{
+    margin-left: 33px;
+    margin-bottom: 175px;
+  }
+  .slider__item_h1{
+    padding-left: 31px;
+  }
+  .slider__item_p{
+    padding-left: 31px;
+  }
+  .slider__item__btn{
+    margin-left: 31px;
+  }
+  .slider__item__windows{
+    width: 507px;
+    height: 150px;
+  }
+}
+@media (max-width: 425px) {
+  .slider__item_h1{
+    padding-left: 31px;
+    padding-top: 87px;
+    padding-bottom: 16px;
+    width: 327px;
+    height: 52px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130.69%;
+    color: #2F5C83;
+  }
+  .slider__item_p{
+    padding-left: 31px;
+    padding-bottom: 30px;
+  }
+  .slider__item__windows_cfg{
+    padding-left: 9px;
+    padding-top: 22px;
+  }
+  .slider__item__btn{
+    margin-left: 31px;
+  }
+  .slider__item__windows_img{
+   display: none;
+  }
+  .slider__item__windows{
+    width: 321px;
+    height: 117px;
+    margin-top: 49px;
+  }
+  .windows__h2{
+    width: 158px;
+    height: 26px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.19%;
+    color: #2F5C83;
+
+  }
+  .windows__p{
+    width: 292px;
+    height: 46px;
+  }
+}
